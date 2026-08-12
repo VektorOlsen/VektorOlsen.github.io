@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eureka</title> 
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <script src="index.js"></script> -->
+</head>
+
+<body id="forside">
+    <header>
+        <div class="header_wrapper">
+            <a class="logo_wrapper" href="#">
+                <img src="images/eureka_logo.png" alt="Eureka logo">
+                <span>EUREKA</span>
+            </a>
+            <div class="burger_wrapper">
+                <div class="header_wrapper_links">
+                    <a class="btn_current_site" href="#">Forside</a>
+                    <a class="btn_standard" href="pages/demo.html">Demo</a>
+                    <a class="btn_standard" href="pages/problemet.html">Problemet</a>
+                    <a class="btn_standard" href="pages/undervisningsprincipper.html">Principper</a>
+                    <a id="btn_log_ind" href="pages/logindside.html">Kom i gang</a>
+                </div>
+                <label class="burger" for="menu-toggle">☰</label>
+                <input type="checkbox" id="menu-toggle">
+            </div>
+        </div>
+    </header>
+
+    <section class="forside_section">
+        <div class="forside_section_wrapper wrap_reverse">
+            <div class="forside_section_wrapper_col">
+                <h1 id="hero_tekst">En interaktiv læringsplatform til matematiklærere og elever</h1>
+                <p>Eureka er en digital læringsplatform tilegnet gymnasiet, der bygger bro mellem folkeskole og ungdomsuddandelse, giver elever et visuelt overblik over pensum og støtter læreren med differentieret undervisning.</p>
+                <a class="btn_sections" href="pages/demo.html">Prøv gratis demo</a>
+            </div>
+            <div class="forside_section_wrapper_col">
+                <video id="hero_video" autoplay muted loop playsinline>
+                    <source src="videos/forsidevideo_skitse.mp4" type="video/mp4">
+                    <source src="videos/forsidevideo_skitse.webm" type="video/webm">
+                    Your browser does not support the video formats: MP4 or WebM.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="forside_section">
+        <div class="forside_section_wrapper wrap_reverse">
+            <div class="forside_section_wrapper_col">
+                <img id="hero_bro" src="images/bro.png" alt="bro mellem folkeskole og gymnasiet">
+            </div>
+            <div class="forside_section_wrapper_col">
+                <h1>Problemet Eureka vil løse</h1>
+                <p>Danmark står over for en stigende udfordring: Unge har det sværere end nogensinde før med matematik. Eureka forsøger at understøtte arbejdet elever med at genopbygge fundamentet, lukke faglige huller, skabe en oplevelse af mestring og dermed bygge bro mellem folkeskolen og gymnasiet.</p>
+                <a class="btn_sections" href="pages/problemet.html">Læs mere</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="forside_section">
+        <div class="forside_section_wrapper">
+            <div class="forside_section_wrapper_col">
+                <h1>Eurekas undervisnings&shy;principper</h1>
+                <p>Eureka er bygget på idéen om, at matematik skal opdages. Det er troen på, at undervisning handler om at et barn er ikke en flaske der skal fyldes, men et bål der skal tændes, som Eureka er bygget på.</p>
+                <a class="btn_sections" href="pages/undervisningsprincipper.html">Læs mere</a>
+            </div>
+            <div class="forside_section_wrapper_col">    
+                <img id="hero_bål" src="images/bål.png" alt="Et barn er ikke en flaske der skal fyldes, men et bål der skal tændes">
+            </div>
+    </section>
+
+    <section class="forside_section">
+        <div class="forside_section_wrapper wrap_reverse">
+            <div class="forside_section_wrapper_col">
+                <img id="hero_hjerne" src="images/hjerne.png" alt="En hjerne får en lys idé">
+            </div>
+            <div class="forside_section_wrapper_col">
+                <h1>Hvad betyder Eureka?</h1>
+                <p>Eureka er et græsk udtryk, der betyder "Jeg har fundet", og bruges som udråbsord for at fejre en opdagelse. At få en følelse af opdagelse er kernen i undervisning – det ligger i ordet education, fra latin educere, “at føre ud”: ikke at fylde ind, men at trække frem det, man allerede kan opdage selv.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_wrapper">
+            <div class="logo_wrapper">
+                <img src="images/eureka_logo.png" alt="Eureka logo">
+                <span>EUREKA</span>
+            </div>
+            <div class="footer_wrapper_kontakt">
+                <h2>Kontakt</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-phone"></i> <!--Ikon fra font awesone lib. i base.scss-->
+                        <p>+45 28 74 38 83</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <p>vektorolsen<wbr>@gmail.com</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-briefcase"></i>
+                        <p>CVR 45769623</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

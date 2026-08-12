@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'); //Find ikoner her: https://fontawesome.com/icons
+
+html {
+  scroll-behavior: smooth; //Scroller smooth når man href'er til toppen af siden
+  
+  font-family: 'Dongle', sans-serif;
+  line-height: 1.4rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

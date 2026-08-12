@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+html {
+  scroll-behavior: smooth;
+  font-family: "Dongle", sans-serif;
+  line-height: 1.4rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn_current_site, .btn_standard, #btn_log_ind, .btn_sections {
+  font-size: 1.6rem;
+  text-decoration: none;
+  border-radius: 999rem;
+  background-color: white;
+  transition: all 0.3s ease;
+  color: black;
+}
+.btn_current_site:hover, .btn_standard:hover, #btn_log_ind:hover, .btn_sections:hover {
+  color: #3ce000;
+}
+
+#btn_log_ind, .btn_sections {
+  padding: 18px 20px;
+  background-color: #2cad00;
+  color: white;
+}
+#btn_log_ind:hover, .btn_sections:hover {
+  color: white;
+  background-color: #3ce000;
+}
+
+.btn_current_site {
+  color: #2cad00;
+}
+
+.btn_sections {
+  margin: 0 auto 0 0;
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  transform: translateY(9px);
+}
+@media (max-width: 750px) {
+  .burger {
+    display: block;
+  }
+}
+
+#forside h1 {
+  font-size: 3rem;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+  word-break: break-word;
+}
+#forside p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  word-break: break-word;
+}
+
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+}
+.logo_wrapper img {
+  height: 4rem;
+  width: auto;
+}
+.logo_wrapper span {
+  font-size: 3rem;
+  font-weight: bold;
+  transform: translateY(5px);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  background-color: white;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2rem;
+  width: 100%;
+  max-width: 80rem;
+}
+.header_wrapper_links {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 1rem;
+}
+@media (max-width: 750px) {
+  .header_wrapper_links {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .header_wrapper:has(#menu-toggle:checked) .burger_wrapper {
+    position: relative;
+  }
+  .header_wrapper:has(#menu-toggle:checked) .header_wrapper_links {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    right: -30%;
+    top: -50%;
+    background: white;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+}
+.header_wrapper #menu-toggle {
+  display: none;
+}
+
+.forside_section {
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+}
+.forside_section_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 4rem 2rem;
+  max-width: 80rem;
+  gap: 2rem;
+}
+.forside_section_wrapper_col {
+  flex: 1 1 27.8rem;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.forside_section_wrapper #hero_tekst {
+  max-width: 27rem;
+}
+.forside_section_wrapper #hero_video {
+  width: 100%;
+  border-radius: 2rem;
+}
+.forside_section_wrapper #hero_bro {
+  width: 100%;
+}
+.forside_section_wrapper #hero_bål {
+  width: 50%;
+  margin: 0 auto;
+}
+.forside_section_wrapper #hero_hjerne {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.wrap_reverse {
+  flex-wrap: wrap-reverse;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 80rem;
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
+  row-gap: 4rem;
+}
+.footer_wrapper_kontakt {
+  margin-left: 4.9rem;
+}
+.footer_wrapper_kontakt h2 {
+  padding: 0 0 1.4rem 0;
+  font-size: 2rem;
+  color: #2cad00;
+}
+.footer_wrapper_kontakt ul {
+  list-style: none;
+}
+.footer_wrapper_kontakt ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer_wrapper_kontakt ul li i {
+  color: #2cad00;
+}
+.footer_wrapper_kontakt ul li p {
+  display: inline-block;
+  padding: 0 0 0 5px;
+}/*# sourceMappingURL=main.css.map */

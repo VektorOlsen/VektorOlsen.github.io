@@ -1,0 +1,177 @@
+#forside {
+    h1 {
+        font-size: 3rem;
+        line-height: 2.4rem;
+        margin-bottom: 1rem;
+        word-break: break-word;
+    }
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        word-break: break-word;
+    }
+}
+
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    img {
+        height: 4rem;
+        width: auto;
+    }
+    span {
+        font-size: 3rem;
+        font-weight: bold;
+        transform: translateY(5px); //Rykker "EUREKA" ned
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    background-color: white; //Ikke er gennemsigtig
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2rem;
+    width: 100%;
+    max-width: 80rem;
+
+    &_links {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        gap: 1rem;
+        @media (max-width: 750px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 750px) {
+        &:has(#menu-toggle:checked) { //"has" matcher den følgende styling til class="header_wrapper_right" når <input>'et med id="menu-toggle" er checked
+            .burger_wrapper {
+                position: relative; //Gør at link'sne er placeret relativt til burgermenuen (alle børn placeres relativt hertil)
+            }
+            .header_wrapper_links {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                position: absolute;
+                right: -30%; //Link'nes højre side har afstand til burger ikon
+                top: -50%; //Link'nes top har afstand fra bunden af burger ikon
+                background: white;
+                padding: 1rem;
+                border: 2px solid black;
+                border-radius: 1rem;
+                padding: 1rem;
+            }
+        }
+    }
+
+    #menu-toggle {
+        display: none; // Skjuler checkbox
+    }
+}
+
+.forside_section {
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 4rem 2rem;
+        max-width: 80rem;
+        gap: 2rem;
+
+        &_col {
+            flex: 1 1 27.8rem; //basis på 27.8rem så største h1 ikke bryder linje før efter wrappen sker
+            max-width: 30rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #hero_tekst {
+            max-width: 27rem;
+        }
+
+        #hero_video {
+            width: 100%;
+            border-radius: 2rem;
+        }
+
+        #hero_bro {
+            width: 100%;
+        }
+
+        #hero_bål {
+            width: 50%;
+            margin: 0 auto; //Centrerer elementet inde i div'en
+        }
+
+        #hero_hjerne {
+            width: 40%;
+            margin: 0 auto; //Centrerer elementet inde i div'en
+        }
+
+    }
+}
+
+.wrap_reverse {
+    flex-wrap: wrap-reverse;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    width: 100%;
+    max-width: 80rem;
+    column-gap: 10rem;
+    row-gap: 4rem;
+
+    &_kontakt {
+        margin-left: 4.9rem;
+        h2 {
+            padding: 0 0 1.4rem 0;
+            font-size: 2rem;
+            color: #2cad00;
+        }
+        ul {
+            list-style: none;
+            li {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                i {
+                    color:#2cad00
+                }
+                p {
+                    display: inline-block;
+                    padding: 0 0 0 5px;   
+                }
+            }
+        }
+    }
+}
